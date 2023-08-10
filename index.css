@@ -1,0 +1,312 @@
+
+body{
+  margin: 2px 0px;
+}
+
+
+#show-time{
+  text-align: right;
+  font-style: italic;
+  font-size: 13px;
+  color: blue;
+  /* position: fixed; */
+  /* height: 5px; */
+}
+
+.header{
+    display: flex;
+    margin: 3px 0;
+    background-color: rgb(223, 223, 212);
+    /* border-radius: 10px; */
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+#logo{
+  /* flex: 1; */
+  padding-top: 0px;
+  justify-content: center;
+  
+}
+
+#logo img{
+  height: 50px;
+  padding-top: 0px;
+  margin-top: 0px;
+  width: 150px;
+  
+}
+
+
+#nav{
+  flex: 1;
+  padding: 16px 0;
+  margin-right: 0px;
+  text-align: right;
+
+}
+
+#nav a{
+  margin-left: 3px;
+  padding-right: 10px;
+  font-family: 'Times New Roman', Times, serif; 
+  text-decoration: none;
+  color: blue;
+}
+
+#nav a:hover{
+  color: blueviolet;
+  text-decoration: underline;
+  
+}
+
+
+
+#profile_summary{
+  margin-top: 50px;
+  margin-bottom: 35px;
+  background-color: rgb(74, 206, 74);
+  background-image: url("./utilities/images/pexels-man planting1.jpg");
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+@keyframes positionChange {
+  from {text-align: left; width: 700px; text-shadow: 0px;}
+  to {text-align: right; width: 850px; text-shadow: 8px;}
+}
+
+/* The element to apply the animation to */
+#profile_summary p{
+  display: inline-block;
+  padding-top: 6px;
+  padding-left: 8px; 
+  font-size: 40px;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-weight: 200;
+  font-style: oblique;
+  text-align: left;
+  width: 700px;
+  color: white;
+  animation-name: positionChange;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  text-shadow: 0px;
+
+}
+
+
+/* .company-profile p:first-letter {
+  float: left;
+  font-size: 45px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-right: 9px; */
+
+
+
+.details {
+  display: inline;
+  /* margin: 0 10px; */
+  text-align: center;
+}
+
+.about, .services, .products, .order, .contact{
+  margin: 0x 20px;;
+}
+
+.center {
+  margin-top: 80px;
+}
+
+.about .center {
+  margin-top: 0px;
+}
+
+
+.details h2 {
+  display: inline-block;
+  
+}
+
+
+.about-images{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  
+}
+
+.about-images img{
+  height: 250px;
+  width:20%;
+  margin: 0 20px;
+  border-radius: 40px;
+  outline-style: auto;
+  outline-color: rgb(232, 134, 15)
+  
+/* flex: 1; */
+}
+
+
+/* .about p{
+
+}
+
+.service p{
+ margin-left: 0;
+}
+.products h2{
+  width: 100px;
+}
+.order p{
+  width: 160px;
+}
+.contact p{
+  width: 90px;
+} */
+
+.font-green{
+ background-color: green;
+ color: white;
+ font-size: 25px;
+ border-radius: 8px;
+ outline-style: double;
+ outline-color: greenyellow;
+
+}
+
+.center{
+  text-align: center;
+}
+
+.center h2{
+  padding: 0 6px;
+}
+
+.font-size{
+  font-size: 18px;
+  margin: 4px 0;
+  text-align: left;
+}
+
+.services_section {
+  display: flex;
+  margin: 0 10px;
+}
+
+#services1, #services2, #services3{
+  background-color: rgb(232, 134, 15);
+  justify-content: space-between;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.services_section h2{
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  
+}
+
+.services_section p{
+  padding: 0 6px;
+
+}
+
+
+.first-row, .second-row{
+ display: flex;
+ margin-top: 15px;
+ margin-bottom: 40px;
+ margin-left: 170px;
+ margin-right: 170px;
+ justify-content: flex-start;
+
+}
+
+
+/* .second-row{
+  justify-content: left;
+} */
+
+.card{
+  width: 250px;
+  margin: 0 25px;
+  /* justify-content: center; */
+  
+}
+
+.card img{
+width: 150px;
+height: 150px;
+border-radius: 40px;
+}
+
+.card img:hover{
+  opacity: .7;
+  box-shadow: 3px;
+  width: 160px;
+  height: 160px;
+}
+
+
+.card-img-overlay {
+  justify-content: center;
+}
+
+
+.card-img-overlay h4{
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#product_description{
+  text-align: center;
+  width: 202px;
+}
+
+.button {
+  /* justify-content: center; */
+  text-decoration: none;
+  background-color: rgb(232, 134, 15);
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button:hover{
+  opacity: .7;
+  width: 80px;
+  height: 50px;
+}
+
+.contact_flex{
+  display: flex;
+  margin: 12px;
+  justify-content: center;
+}
+
+.contact_flex_item{
+  margin: 20px;
+}
+
+.contact_flex img{
+  height: 80px;
+  width: 80px;
+}
+
+.contact_flex p{
+  text-align: center;
+}
+
