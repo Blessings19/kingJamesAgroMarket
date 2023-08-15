@@ -1,23 +1,11 @@
 
 body{
-  margin: 2px 0px;
+  margin: 0px;
 }
-
-
-#show-time{
-  text-align: right;
-  font-style: italic;
-  font-size: 13px;
-  color: blue;
-  /* position: fixed; */
-  /* height: 5px; */
-}
-
 .header{
     display: flex;
-    margin: 3px 0;
+    /* margin: 0; */
     background-color: rgb(223, 223, 212);
-    /* border-radius: 10px; */
     height: 50px;
     position: fixed;
     width: 100%;
@@ -41,7 +29,7 @@ body{
 
 
 #nav{
-  flex: 1;
+  flex: 2;
   padding: 16px 0;
   margin-right: 0px;
   text-align: right;
@@ -49,7 +37,7 @@ body{
 }
 
 #nav a{
-  margin-left: 3px;
+  margin: 25px;
   padding-right: 10px;
   font-family: 'Times New Roman', Times, serif; 
   text-decoration: none;
@@ -57,15 +45,15 @@ body{
 }
 
 #nav a:hover{
-  color: blueviolet;
-  text-decoration: underline;
+  background-color: rgb(142, 190, 192);
+  border-radius: 5px;
+  padding: 4px;
   
 }
 
 
 
 #profile_summary{
-  margin-top: 50px;
   margin-bottom: 35px;
   background-color: rgb(74, 206, 74);
   background-image: url("./utilities/images/pexels-man planting1.jpg");
@@ -85,7 +73,7 @@ body{
 /* The element to apply the animation to */
 #profile_summary p{
   display: inline-block;
-  padding-top: 6px;
+  padding-top: 18px;
   padding-left: 8px; 
   font-size: 40px;
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
@@ -117,7 +105,7 @@ body{
   text-align: center;
 }
 
-.about, .services, .products, .order, .contact{
+.about, .services, .products, .order, .footer{
   margin: 0x 20px;;
 }
 
@@ -151,26 +139,7 @@ body{
   outline-style: auto;
   outline-color: rgb(232, 134, 15)
   
-/* flex: 1; */
 }
-
-
-/* .about p{
-
-}
-
-.service p{
- margin-left: 0;
-}
-.products h2{
-  width: 100px;
-}
-.order p{
-  width: 160px;
-}
-.contact p{
-  width: 90px;
-} */
 
 .font-green{
  background-color: green;
@@ -291,19 +260,27 @@ border-radius: 40px;
   height: 50px;
 }
 
-.contact_flex{
-  display: flex;
-  margin: 12px;
+.footer{
+  margin-top: 30px;
+  background-color: green;
+
+}
+
+
+.contact{
+  display: inline-block;
+  /* margin: 12px; */
   justify-content: center;
 }
 
-.contact_flex_item{
+.contact_item{
   margin: 20px;
+  width: 200px;
 }
 
-.contact_flex img{
-  height: 80px;
-  width: 80px;
+.contact_item img{
+  height: 40px;
+  width: 40px;
 }
 
 .contact_flex p{
